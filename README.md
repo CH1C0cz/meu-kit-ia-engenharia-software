@@ -2,16 +2,26 @@
 
 Desafio de Projeto da [DIO](https://dio.me): monte o seu kit de IA para o dia a dia e delegue uma tarefa real, com você no comando.
 
-Este repositório reúne atalhos adaptados à minha rotina de estudos em Engenharia de Software, programação e cibersegurança, além de uma proposta de tarefa técnica delegada à IA.
+O kit foi criado pelo Expert Bruno Lima com os prompts, templates, checklists e skills usados nas Aulas. Ele não é uma apostila: abra a pasta que resolve o seu problema, copie o modelo, adapte e use.
+
+Este repositório foi personalizado para minha rotina de estudos em Engenharia de Software, programação e cibersegurança.
 
 **Copie → adapte → teste → confira → melhore**
 
 ## Como Fazer o Desafio
 
-1. Escolhi uma tarefa técnica relacionada à minha formação.
-2. Adaptei dois atalhos para reutilizar nos estudos e pesquisas.
-3. Preparei uma delegação com objetivo, contexto, recursos, limites e critérios de sucesso.
-4. A execução e a validação devem ser registradas com evidências reais antes da entrega final.
+1. Clique em **Use this template**, depois em **Create a new repository**. Dê um nome simples, deixe **Public** e confirme.
+2. Siga os passos abaixo com uma tarefa real.
+3. Preencha a seção [Minha Entrega](#minha-entrega) e entregue o link da sua cópia na DIO.
+
+## Os Passos
+
+1. **Escolha uma tarefa real.** Comece por uma atividade que se repete ou que seja útil à sua rotina.
+2. **Pegue um modelo.** Abra a pasta do kit que combina com a tarefa.
+3. **Adapte.** Troque o que está entre colchetes pelo seu contexto, objetivo, dados, limites e formato.
+4. **Teste.** A primeira resposta é um ponto de partida. Ajuste até funcionar para sua realidade.
+5. **Delegue.** Entregue a tarefa à IA. Peça o plano antes de ela começar, acompanhe e valide o resultado.
+6. **Confira.** Provável não é o mesmo que verdadeiro. Revise com o checklist antes de usar.
 
 ## O Que Tem no Kit
 
@@ -20,8 +30,19 @@ Este repositório reúne atalhos adaptados à minha rotina de estudos em Engenha
 | [01-prompts](01-prompts) | Pedidos prontos para adaptar: escrita, comunicação, pesquisa, comparação e preparação de reuniões |
 | [02-templates](02-templates) | Estruturas para preencher: bom pedido, pesquisa e decisão, e delegação |
 | [03-checklists](03-checklists) | Revisão de respostas, de textos e de tarefas delegadas |
-| [04-skills](04-skills) | Como criar uma skill e a Skill Preparador de Reuniões |
+| [04-skills](04-skills) | Como criar uma skill e a Skill Preparador de Reuniões usada nas Aulas |
 | [05-delegacao-e-automacao](05-delegacao-e-automacao) | Gatilhos de automação, supervisão e checkpoints |
+
+## Os Frameworks das Aulas
+
+- **Bom pedido:** contexto + instrução + objetivo + formato.
+- **Pesquisa e decisão:** pergunta → pesquisa → critérios → comparação → você. Peça fontes quando precisar de informação externa.
+- **Segurança:** pare → confira → use. Valide fatos, números, datas, fontes e contexto.
+- **Atalhos reutilizáveis:** criar → testar → ajustar → salvar. Separe instruções fixas das informações que mudam a cada uso.
+- **Delegação:** objetivo + contexto + recursos + limites + sucesso.
+- **Supervisão:** definir → delegar → acompanhar → validar. Em tarefas maiores, confira o plano, acompanhe os checkpoints e valide o resultado.
+
+> A IA pode ajudar você a escrever, pesquisar, organizar e executar. A responsabilidade pelo resultado continua sendo sua.
 
 ---
 
