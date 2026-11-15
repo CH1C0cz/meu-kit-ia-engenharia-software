@@ -198,7 +198,13 @@ A análise encontrou os seguintes pontos:
 
 Os atalhos foram pensados para apoiar meus estudos de programação e minhas pesquisas sobre tecnologia. Na tarefa delegada, a IA ajudou a organizar a revisão do código e a separar problemas observados de recomendações preventivas. A análise foi limitada ao conteúdo do ZIP, e o projeto original foi preservado.
 
-**Reflexão pessoal a completar:** registrar o que aprendi com a análise, quais achados considerei mais importantes e como pretendo aplicar esse conhecimento em projetos futuros.
+Durante essa atividade, percebi que a IA pode ajudar bastante nos meus estudos, principalmente quando uso as respostas como apoio para aprender e não apenas para copiar. No teste do Professor de Programação, pratiquei listas em Python, o uso de `append()`, laços `for`, `range()`, `len()` e a condição para identificar números pares. Os exercícios e as correções me ajudaram a entender melhor como cada parte do código funciona.
+
+Com o Pesquisador de Tecnologia, pesquisei o OWASP Top 10:2025 e conheci melhor alguns riscos relacionados à segurança de aplicações. Também entendi a importância de consultar as fontes indicadas e conferir se as informações estão atualizadas.
+
+Na análise do CineMostra, que foi meu primeiro site feito em uma atividade prática, consegui observar o formulário, o JavaScript e o uso de recursos externos. Aprendi que nem todo ponto de melhoria é uma vulnerabilidade confirmada: é importante explicar o que foi observado no código e deixar claras as limitações da análise.
+
+Como estou no segundo semestre do primeiro ano de Engenharia de Software, ainda estou aprendendo os fundamentos. Essa atividade me ajudou a praticar conteúdos que estou estudando e a perceber que posso usar a IA para tirar dúvidas, pesquisar e revisar meus trabalhos, mas preciso conferir as respostas e entender o resultado antes de utilizá-lo. Em próximos projetos, pretendo prestar mais atenção à segurança desde o começo do desenvolvimento.
 
 ---
 
