@@ -21,7 +21,7 @@ Este repositório foi personalizado para minha rotina de estudos em Engenharia d
 3. **Adapte.** Troque o que está entre colchetes pelo seu contexto, objetivo, dados, limites e formato.
 4. **Teste.** A primeira resposta é um ponto de partida. Ajuste até funcionar para sua realidade.
 5. **Delegue.** Entregue a tarefa à IA. Peça o plano antes de ela começar, acompanhe e valide o resultado.
-6. **Confira.** Provável não é o mesmo que verdadeiro. Revise com o checklist antes de usar.
+6. **Confira.** Provável não é o mesmo que verdadeiro. Valide fatos, números, datas, fontes e contexto com o checklist.
 
 ## O Que Tem no Kit
 
@@ -50,16 +50,18 @@ Este repositório foi personalizado para minha rotina de estudos em Engenharia d
 
 ### Minha Tarefa Real
 
-Escolhi realizar uma análise preliminar de segurança de um projeto de software próprio ou desenvolvido para estudos. Essa tarefa está relacionada à minha formação em Engenharia de Software e ao meu interesse em cibersegurança. O objetivo é usar a IA como apoio para revisar o código, identificar possíveis riscos, explicar os achados e sugerir melhorias, mantendo a decisão final sob minha responsabilidade.
+Escolhi realizar uma análise estática preliminar de segurança do CineMostra, meu primeiro site, desenvolvido como atividade prática. O projeto utiliza HTML e CSS, além de JavaScript inserido diretamente no final do arquivo `index.html`.
 
-**Status:** tarefa planejada; a execução depende da seleção e do envio de um projeto de estudo.
+A tarefa está relacionada à minha formação em Engenharia de Software e ao meu interesse em cibersegurança. O objetivo foi revisar o código-fonte, identificar riscos e oportunidades de melhoria, explicar os achados e sugerir recomendações, mantendo a decisão final sob minha responsabilidade.
+
+**Escopo autorizado:** somente análise documental/estática dos arquivos fornecidos. O projeto original não foi modificado. Não foram realizados testes ativos, ataques, acessos externos ou alterações no site.
 
 ### Meus Atalhos
 
 Adaptei dois atalhos para minha rotina:
 
 1. **Professor de Programação:** ajuda a aprender conceitos, entender códigos, resolver exercícios e identificar erros. As instruções fixas orientam a IA a ensinar passo a passo; o assunto, a linguagem e o nível do exercício variam conforme a necessidade.
-2. **Pesquisador de Tecnologia:** orienta pesquisas sobre linguagens, ferramentas, frameworks e cibersegurança. As instruções fixas exigem fontes confiáveis, distinção entre fatos e sugestões e transparência sobre informações não confirmadas; o tema pesquisado muda a cada uso.
+2. **Pesquisador de Tecnologia:** orienta pesquisas sobre tecnologias, ferramentas, frameworks e cibersegurança. As instruções fixas exigem fontes confiáveis, distinção entre fatos e sugestões e transparência sobre informações não confirmadas; o tema pesquisado muda a cada uso.
 
 #### Atalho 1 — Professor de Programação
 
@@ -105,7 +107,7 @@ Não invente versões, preços ou funcionalidades. Informe quando não conseguir
 Finalize com uma recomendação justificada para quem está estudando Engenharia de Software.
 ```
 
-### Minha Delegação
+### Atalho de Delegação — Análise de Segurança
 
 ```text
 # Delegação — Análise preliminar de segurança de um projeto
@@ -120,7 +122,7 @@ Sou estudante de Engenharia de Software e estou desenvolvendo conhecimentos em p
 - Código-fonte de um projeto próprio ou desenvolvido para estudos.
 - Documentação técnica disponível.
 - IA para apoiar a revisão.
-- OWASP Top 10 como referência de boas práticas.
+- OWASP Top 10 como referência de boas práticas, quando aplicável.
 
 ## Instruções
 1. Solicite os arquivos necessários antes de começar.
@@ -149,20 +151,54 @@ Peça minha autorização antes de qualquer teste ativo, alteração de arquivos
 
 ### O Plano da IA
 
-**Pendente de execução.** Depois de selecionar o projeto e enviar os arquivos à IA, registrar aqui o print do plano recebido e descrever quais ajustes foram feitos antes de autorizar a análise.
+A IA propôs e executou o seguinte plano, respeitando o escopo autorizado:
 
-### O Resultado
+1. Listar os arquivos recebidos e identificar as tecnologias utilizadas.
+2. Ler o HTML, os estilos CSS e o JavaScript existente.
+3. Revisar o formulário, as validações, os dados pessoais e as dependências externas.
+4. Separar problemas observados, riscos condicionais e boas práticas.
+5. Registrar recomendações e limitações, sem alterar o projeto.
 
-**Pendente de execução.** Depois da análise, inserir aqui o print do relatório e explicar como os achados foram conferidos. Não registrar resultados nem vulnerabilidades sem evidência verificável.
+**Execução:** foram inspecionados `index.html`, `css/base.css`, `css/layout.css`, `css/componentes.css` e `README.md`. O JavaScript está embutido no HTML; não há arquivos JavaScript separados no ZIP.
+
+### O Resultado — Relatório da Análise Estática
+
+A análise encontrou os seguintes pontos:
+
+| ID | Achado | Classificação | Evidência e interpretação |
+|---|---|---|---|
+| A01 | Mensagem de reserva pode induzir ao erro | Problema funcional / confiabilidade | O evento `submit` chama `event.preventDefault()` e mostra `alert('Reserva enviada')`. O código analisado não implementa envio a um servidor nem confirmação real da reserva. |
+| A02 | Validação somente no navegador | Recomendação preventiva | O formulário usa `required`, `minlength`, `pattern`, `min` e `max`. Essas verificações ajudam a experiência do usuário, mas não substituem validação no servidor caso um backend seja criado futuramente. |
+| A03 | Nome completo presente na página | Privacidade / exposição de informação | O nome do autor aparece no título HTML, no rodapé e no README do projeto. É informação visível a quem recebe ou acessa os arquivos. Avaliar se a publicação do nome completo é necessária. |
+| A04 | Dependência de recursos externos | Dependência de terceiros / privacidade | As imagens usam `picsum.photos` e o mapa é incorporado do Google Maps por um `iframe`. Isso cria dependência de disponibilidade e pode envolver requisições a esses serviços quando a página é aberta. |
+| A05 | Proteção adequada no link que abre nova aba | Boa prática observada | O link externo utiliza `target="_blank"` junto com `rel="noopener noreferrer"`, reduzindo riscos associados à página aberta em nova aba. |
+
+#### Recomendações
+
+- **A01:** em uma versão futura, exibir uma mensagem que deixe claro que se trata de uma demonstração, ou implementar um backend que processe e confirme a reserva. Nenhuma alteração foi feita nesta atividade.
+- **A02:** se o projeto ganhar backend, validar os dados novamente no servidor e tratar entradas de forma segura.
+- **A03:** revisar quais informações pessoais precisam constar na versão publicada.
+- **A04:** avaliar a necessidade dos serviços externos, sua política de privacidade e alternativas locais quando apropriado.
+- **A05:** manter a proteção `noopener noreferrer` nos links externos que abrem novas abas.
+
+#### Limitações da análise
+
+- Foi feita somente leitura do código-fonte fornecido.
+- Não houve execução do site em navegador, varredura automatizada, teste de rede ou teste de penetração.
+- Não há backend no material analisado; portanto, não foi possível avaliar autenticação, autorização, banco de dados, processamento de reservas ou validação no servidor.
+- Não foi confirmada exploração de vulnerabilidade. Os achados são problemas observados no código ou recomendações preventivas, conforme indicado na tabela.
+- Não foi possível avaliar cabeçalhos HTTP, configuração de hospedagem, HTTPS ou políticas de segurança do servidor a partir dos arquivos estáticos.
+
+**Conclusão:** o material permitiu identificar pontos de melhoria de confiabilidade, privacidade e preparação para uma futura integração com backend. Não há evidência suficiente nesta análise para afirmar que o site possui uma vulnerabilidade explorável.
 
 ### Como Foi para Você
 
-Os atalhos foram pensados para apoiar meus estudos de programação e minhas pesquisas sobre tecnologia. A delegação foi estruturada para praticar o uso responsável da IA em uma atividade de cibersegurança, com limites claros, acompanhamento e validação humana.
+Os atalhos foram pensados para apoiar meus estudos de programação e minhas pesquisas sobre tecnologia. Na tarefa delegada, a IA ajudou a organizar a revisão do código e a separar problemas observados de recomendações preventivas. A análise foi limitada ao conteúdo do ZIP, e o projeto original foi preservado.
 
-**Reflexão final a completar após a execução:** registrar o que funcionou, quais ajustes foram necessários e o que aprendi com a conferência do resultado.
+**Reflexão pessoal a completar:** registrar o que aprendi com a análise, quais achados considerei mais importantes e como pretendo aplicar esse conhecimento em projetos futuros.
 
 ---
 
 ## Cuidados com a publicação
 
-Não publique e-mails, nomes de clientes, dados de empresas, senhas, tokens, chaves de API, credenciais ou informações pessoais. Utilize apenas projetos próprios ou autorizados e remova segredos do código antes de compartilhá-lo.
+Não publique e-mails, nomes de clientes, dados de empresas, senhas, tokens, chaves de API, credenciais ou informações pessoais. Utilize apenas projetos próprios ou autorizados e remova segredos do código antes de compartilhá-los.
