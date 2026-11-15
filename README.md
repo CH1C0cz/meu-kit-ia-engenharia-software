@@ -202,6 +202,23 @@ Os atalhos foram pensados para apoiar meus estudos de programação e minhas pes
 
 ---
 
+## Evidências da Execução
+
+As capturas de tela das cinco etapas do desafio foram reunidas em um arquivo compactado para facilitar a consulta.
+
+**[Baixar evidências — prints_kit_ia_etapas_1_a_5.zip](prints_kit_ia_etapas_1_a_5.zip)**
+
+O arquivo contém:
+1. **Professor de Programação:** exercícios de Python com listas, `append()`, `for`, `range()` e números pares.
+2. **Pesquisador de Tecnologia:** pesquisa sobre OWASP Top 10:2025.
+3. **Envio e autorização do CineMostra:** apresentação do projeto e definição dos limites da análise.
+4. **Plano da IA:** planejamento da análise estática.
+5. **Resultado da análise:** achados, recomendações, limitações e conclusão.
+
+Para visualizar as imagens individualmente, baixe o ZIP e extraia seu conteúdo.
+
+---
+
 ## Cuidados com a publicação
 
 Não publique e-mails, nomes de clientes, dados de empresas, senhas, tokens, chaves de API, credenciais ou informações pessoais. Utilize apenas projetos próprios ou autorizados e remova segredos do código antes de compartilhá-los.
