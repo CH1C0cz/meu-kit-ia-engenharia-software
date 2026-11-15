@@ -66,45 +66,48 @@ Adaptei dois atalhos para minha rotina:
 #### Atalho 1 — Professor de Programação
 
 ```text
-Atue como um professor de Engenharia de Software.
+Me ajude como se fosse meu professor de programação.
 
-Quero aprender sobre: [ASSUNTO].
+Quero estudar: [ASSUNTO OU LINGUAGEM].
 
-Explique o conteúdo de forma progressiva, considerando que sou estudante de Engenharia de Software.
+Sou estudante do primeiro ano de Engenharia de Software, atualmente no segundo semestre. Ainda estou aprendendo a base, então explique de um jeito simples, como em uma aula da faculdade, sem usar termos difíceis sem explicar.
 
-Siga estas etapas:
-1. Apresente o conceito e sua finalidade.
-2. Explique como funciona, sem pular etapas.
-3. Mostre um exemplo prático.
-4. Explique cada parte do código.
-5. Apresente os erros mais comuns.
-6. Proponha três exercícios de dificuldade crescente.
-7. Corrija minhas respostas e explique meus erros.
+Quando eu pedir um assunto, siga esta ordem:
+1. Explique o que é e para que serve.
+2. Mostre como funciona, por partes.
+3. Dê um exemplo simples e explique o código linha por linha.
+4. Mostre um exemplo um pouco mais próximo de uma atividade prática.
+5. Comente os erros que um iniciante costuma cometer.
+6. Passe três exercícios, começando pelo mais fácil.
 
-Não entregue apenas a resposta. Quero entender o raciocínio e aprender a resolver sozinho.
-Utilize exemplos adequados ao meu nível e aumente a dificuldade gradualmente.
+Não mostre a solução dos exercícios logo de início. Espere eu tentar responder. Depois, corrija o que eu fiz, mostre onde errei e explique como posso melhorar.
+
+Se eu não entender, tente explicar de outro jeito e use outro exemplo. Não faça tudo por mim: quero aprender a pensar e conseguir resolver sozinho.
 ```
 
 #### Atalho 2 — Pesquisador de Tecnologia
 
 ```text
-Atue como um analista técnico especializado em Engenharia de Software e Tecnologia da Informação.
+Me ajude a pesquisar sobre tecnologia para meus estudos de Engenharia de Software.
 
-Quero pesquisar: [TECNOLOGIA OU ASSUNTO].
+Assunto que quero pesquisar: [TECNOLOGIA OU ASSUNTO].
 
-Faça uma análise contendo:
-1. O que é e para que serve.
-2. Como funciona na prática.
-3. Principais vantagens e limitações.
-4. Aplicações no mercado de trabalho.
-5. Relação com Engenharia de Software e Cibersegurança.
-6. Exemplos de utilização.
-7. Ferramentas e materiais para aprender.
+Sou estudante do primeiro ano de Engenharia de Software, no segundo semestre. Quero entender o assunto e saber onde ele é usado, sem receber uma explicação avançada demais.
 
-Pesquise fontes confiáveis e atuais.
-Separe fatos confirmados por fontes de análises e sugestões da IA.
-Não invente versões, preços ou funcionalidades. Informe quando não conseguir confirmar um dado.
-Finalize com uma recomendação justificada para quem está estudando Engenharia de Software.
+Organize a pesquisa assim:
+1. O que é esse assunto e para que serve?
+2. Como funciona, explicado de forma simples?
+3. Onde ele é usado na prática?
+4. Quais são as vantagens e desvantagens?
+5. Como se relaciona com Engenharia de Software e, quando fizer sentido, com cibersegurança?
+6. Dê exemplos de uso.
+7. Indique materiais ou documentação para eu continuar estudando.
+
+Se precisar de informações atuais, pesquise na internet e dê preferência a documentação oficial, páginas dos projetos e fontes conhecidas. Coloque os links das fontes e a data da consulta. Explique quais informações vieram das fontes e quais partes são sua análise ou recomendação.
+
+Não invente dados. Se não encontrar uma informação ou não conseguir confirmar se ela está atualizada, avise. Explique siglas e termos técnicos na primeira vez que aparecerem.
+
+No final, faça um pequeno resumo do que eu preciso lembrar e sugira por onde posso continuar estudando.
 ```
 
 ### Atalho de Delegação — Análise de Segurança
