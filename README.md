@@ -212,7 +212,7 @@ Como estou no segundo semestre do primeiro ano de Engenharia de Software, ainda 
 
 As capturas de tela das cinco etapas do desafio foram reunidas em um arquivo compactado para facilitar a consulta.
 
-**[Baixar evidências — prints_kit_ia_etapas_1_a_5.zip](prints_kit_ia_etapas_1_a_5.zip)**
+**[Baixar evidências — prints_kit_ia_etapas_1_a_5.zip](evidencias_kit_ia_etapas_1_a_5.zip)**
 
 O arquivo contém:
 1. **Professor de Programação:** exercícios de Python com listas, `append()`, `for`, `range()` e números pares.
